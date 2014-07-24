@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /*.php$
+Disallow: /*.xml$
+
+Sitemap: http://www.cafeencapsula.com/sitemap.xml

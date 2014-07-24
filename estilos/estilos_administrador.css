@@ -1,0 +1,364 @@
+/* 
+    Document   : estilos.css del panel de administracion
+    Created on : 10-ago-2012, 15:07:30
+    Author     : carlos gutiérrez
+    Description:
+        estilos principales.
+    COLORES:
+            verde: #bad05a
+            gris fondo: #cdcdcd
+            naranja para negristas: #f3c153
+            gris texto:  #979797
+            enlaces:  #979797
+*/
+
+/* FIN - TRUCOS, IMAGEN DE FONDO */
+/* TRUCOS, IMAGEN DE FONDO */
+.limpiar {
+        clear: both;
+}
+/* FIN - TRUCOS, IMAGEN DE FONDO */
+/* HIPERVINCULOS GENÉRICOS */
+A:link {color: #315998; text-decoration: none;} 
+A:visited {color: #315998; text-decoration: none;} 
+A:hover {color: #000; text-decoration: none;}
+A.logo:link {color: #715028; text-decoration: none;} 
+A.logo:visited {color: #715028; text-decoration: none;} 
+A.logo:hover {color: #715028; text-decoration: none;}
+A.linkmenu:link {color: #fff; text-decoration: none;} 
+A.linkmenu:visited {color: #fff; text-decoration: none;} 
+A.linkmenu:hover {color: #252525; text-decoration: none;}
+/* FIN HIPERVINCULOS GENÉRICOS */
+/* MAQUETACION */
+body {
+    background-color: #cdcdcd;
+    color: #333333;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-size:18px;
+}
+h2 {
+    font-size:18px;
+}
+h3 {
+    font-size:16px;
+}
+#marco_logo {
+    padding-top: 10px;
+    width: 355px;
+    height: 80px;
+}
+#marco_logo2 {
+    float: left;
+    padding-top: 10px;
+    width: 355px;
+    height: 80px;
+}
+.logo {
+    font-size: 46px; 
+    color: #715028;
+    font-family: 'Fredericka the Great', cursive;
+}
+.contenedor_marco { 
+    width: 1000px;
+    margin: 0 auto; 
+    min-height: 30px;
+    padding: 20px 20px 0px 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;	
+    border-bottom-color: #DADADA;
+    border-top-style: solid;
+    border-top-width: 0px;	
+    border-top-color: #DADADA;
+    background-color: #bad05a;
+} 
+#marco {
+    width: 100%;
+    min-height: 30px; 
+    color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;	
+    border-bottom-color: #DADADA;
+    border-top-style: solid;
+    border-top-width: 0px;	
+    border-top-color: #DADADA;
+    background-color: #bad05a;
+}
+.contenedor_cabecera { 
+    width: 1000px;
+    margin: 0 auto; 
+    padding: 20px 20px 20px 20px;
+    background-color: #cdcdcd;
+} 
+#cabecera {
+    width: 100%; 
+    min-height: 120px;
+    background-color: #cdcdcd;
+}
+.contenedor_menu { 
+    width: 1001px;
+    margin: 0 auto; 
+    padding: 0px 0px 0px 0px;
+    background: #898F9E;
+    background-image: linear-gradient(bottom, #A7ADC0 13%, #898F9E 57%);
+    background-image: -o-linear-gradient(bottom, #A7ADC0 13%, #898F9E 57%);
+    background-image: -moz-linear-gradient(bottom, #A7ADC0 13%, #898F9E 57%);
+    background-image: -webkit-linear-gradient(bottom, #A7ADC0 13%, #898F9E 57%);
+    background-image: -ms-linear-gradient(bottom, #A7ADC0 13%, #898F9E 57%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.13, #A7ADC0),
+            color-stop(0.57, #898F9E)
+    );
+    
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+#menu {
+    width: 100%;    
+}
+.recuadro{
+    float: left;
+    width: 77px;
+    height: 45px;
+    padding-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #fff;
+    
+}
+.separacion_icono {
+    margin-top: 2px;
+}
+.contenedor_cuerpo { 
+    width: 960px;
+    min-height: 400px;
+    margin: 0 auto; 
+    padding: 20px 20px 0px 20px;
+    border-style: dotted;
+    border-width: 0px;	
+    border-color: #333333;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#cuerpo {
+    width: 100%;
+}
+
+#login {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 1%;
+    min-height: 400px;
+    padding: 1% 1% 1% 1%;
+    background-color : #fff;
+
+    border-style: dotted;
+    border-width: 1px;	
+    border-color: #333333;            
+}
+
+
+.semillas {
+    font-size: 0.8em;
+}
+
+
+
+.vanadium-advice.vanadium-invalid, .vanadium-advice.vanadium-invalid * {
+    font-size: 0.8em;
+    margin-left: 1%;
+}
+input.vanadium-valid {
+    background-color: #FFFFFF;
+}
+
+input.vanadium-invalid {
+    background-color: #333333;
+}
+/*
+:required -> obligatorio.
+:integer solo números enteros.
+:float números decimales.
+:length;x tiene que tener x caracteres.
+:min_length;x mínimo x caracteres.
+:max_length;n máximo x caracteres.
+:accept debe ser aceptado.
+:email comprobar email.
+*/
+
+.tabla {
+    width: 100%;        
+    font-size: 12px;
+}
+.tabla th {
+    border: 1px solid #333333;
+    padding: 1%;
+    background: #333333;
+    color: #F1F1F1;
+}
+.tabla td {
+    border: 1px solid #333333;
+    padding: 1%;
+    text-align: center;
+    background: #fff;
+    color: #333333;
+}
+
+.errores_error{
+    width: 280px;
+    height: 96px;
+    background: #B40404;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    border-color: #252525;
+    border-style: solid;
+    border-width: 1px;
+}
+.errores_ok{
+    width: 280px;
+    height: 96px;
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    border-color: #252525;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.label_editar {
+    float: left;
+    width: 175px;
+    background-color: #fff;
+    padding: 7px;
+}
+
+.imput_editar {
+    float: left;
+    width: 200px;
+    background-color: #ccc;
+    padding: 5px;
+    margin-left: 5px;
+    border-color: #252525;
+    border-style: solid;
+    border-width: 0px;
+}
+
+/*ESTILOS DEL DRAG DROP PARA ACTUALIZAR POSICION DE LOS MENUS */
+#contentWrap {
+	width: 700px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+#contentLeft {
+	float: left;
+	width: 400px;
+}
+#contentLeft li {
+	list-style: none;
+	margin: 0 0 4px 0;
+	padding: 10px;
+	background-color: #ccc;
+	border: #CCCCCC solid 1px;
+	color:#000;
+}
+#contentRight {
+	float: right;
+	width: 260px;
+	padding:10px;
+	background-color: #ccc;
+	color:#000;
+}
+
+/* CAJA BIENVENIDA*/
+.caja_marco_bienvenida {
+    float:left;
+    width: 365px;
+    height: 25px;
+    border: #d1d1d1 solid 1px;
+    background: #ccc;
+    text-align: center;
+    padding-top: 12px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: -11px;
+    position: relative;
+    margin-top: -33px;
+    
+    background: #898F9E;
+    background-image: linear-gradient(bottom, #dbdfe0 13%, #99aab0 68%);
+    background-image: -o-linear-gradient(bottom, #dbdfe0 13%, #99aab0 68%);
+    background-image: -moz-linear-gradient(bottom, #dbdfe0 13%, #99aab0 68%);
+    background-image: -webkit-linear-gradient(bottom, #dbdfe0 13%, #99aab0 68%);
+    background-image: -ms-linear-gradient(bottom, #dbdfe0 13%, #99aab0 68%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.05, #dbdfe0),
+            color-stop(0.80, #99aab0)
+    );
+    
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+}
+.caja_bienvenida {
+    float:left;
+    width: 345px;
+    height: 300px;
+    border: #d1d1d1 solid 1px;
+    background: #fff;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+.boton {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background: #ccc;
+    color: #000;
+}
+.boton:hover {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background: #000;
+    color: #fff;
+}
+.colocar_boton {
+    margin-top:10px; margin-left: 194px;
+}
+.accesos_admin {
+    float: right;
+    width: 60px;
+    height: 50px;
+    background-color: #fff; 
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 10px;
+}

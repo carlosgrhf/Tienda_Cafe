@@ -1,0 +1,89 @@
+/* 
+    Document   : estilos.css de hayCANAL.com
+    Created on : 10-ago-2012, 15:07:30
+    Author     : carlos gutiérrez
+    Description:
+        estilos principales.
+    COLORES:
+            AZUL CLARITO: #E4F1FB
+            AZUL OSCURO:  #035a89
+            ROJO:         #F02B2B
+            GRIS:         #DADADA
+*/
+/* TRUCOS, IMAGEN DE FONDO */
+#fondo {
+        width:100%; 
+        position: absolute; 
+        z-index: -1; 
+        top: 0; 
+        left:0;
+}
+/* FIN - TRUCOS, IMAGEN DE FONDO */
+/* TRUCOS, IMAGEN DE FONDO */
+.limpiar {
+        clear: both;
+}
+/* FIN - TRUCOS, IMAGEN DE FONDO */
+/* HIPERVINCULOS GENÉRICOS */
+A:link {color: #F02B2B; text-decoration: none} 
+A:visited {color: #F02B2B; text-decoration: none} 
+A:hover {color: #770035; text-decoration: none;}
+A.logo:link {color: #382E2A; text-decoration: none;} 
+A.logo:visited {color: #382E2A; text-decoration: none;} 
+A.logo:hover {color: #382E2A; text-decoration: none;}
+/* FIN HIPERVINCULOS GENÉRICOS */
+/* MAQUETACION */
+body {
+    background-color: #eee;
+}
+#contenedor {
+	width: 650px;
+	margin: 0 auto; 
+        padding: 1% 1% 1% 1%;
+        border-style: solid;
+	border-width: 1px;	
+        border-color: #DADADA; 
+        font-size: 10pt;
+        background-color: #fff;
+}
+.tabla {
+    width: 100%;
+    border: 1px solid black;
+    background: #E4F1FB;
+}
+.tabla th {
+    border: 1px solid black;
+    padding: 1%;
+    background: #fff;
+}
+.tabla td {
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+}
+.lista1 {
+    float:left;
+    margin-left: 20px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 16px;
+    font-size: 12px;
+    list-style-type: none;
+}
+.lista2 {
+    float:right;
+    margin-right: 120px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 16px;
+    font-size: 12px;
+    list-style-type: none;
+}
+#marco_logo {
+    padding-top: 10px;
+    width: 355px;
+    height: 80px;
+    color: #382E2A;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px; 
+}

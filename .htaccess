@@ -1,0 +1,44 @@
+RewriteEngine on
+RewriteRule tienda/(.*)/(.*)                producto.php?Pid=$1
+RewriteRule comprar/(.*)/(.*)               carrito/actualizar.php?Pid=$1
+RewriteRule actualizar/(.*)                 carrito/actualizar_borrar.php?Pid=$1
+
+RewriteRule escaparate_fabricante_sistema/(.*)/(.*)	    escaparate_fabricante_sistema.php?Fab=$1&Sis=$2
+RewriteRule escaparate_fabricante_categoria/(.*)/(.*)	    escaparate_fabricante_categoria.php?Fab=$1&Cat=$2
+RewriteRule escaparate_fabricante/(.*)                      escaparate_fabricante.php?Fab=$1
+
+RewriteRule escaparate_categoria_sistema/(.*)/(.*)	    escaparate_categoria_sistema.php?Cat=$1&Sis=$2
+RewriteRule escaparate_categoria_fabricante/(.*)/(.*)	    escaparate_categoria_fabricante.php?Cat=$1&Fab=$2
+RewriteRule escaparate_categoria/(.*)                       escaparate_categoria.php?Cat=$1
+
+RewriteRule escaparate_sistema_categoria/(.*)/(.*)	    escaparate_sistema_categoria.php?Sis=$1&Cat=$2
+RewriteRule escaparate_sistema_fabricante/(.*)/(.*)	    escaparate_sistema_fabricante.php?Sis=$1&Fab=$2
+RewriteRule escaparate_sistema/(.*)                         escaparate_sistema.php?Sis=$1
+
+RewriteRule carrito/carrito_paso_uno            carrito/carrito.php
+RewriteRule carrito/carrito_paso_dos            carrito/carrito2.php
+RewriteRule carrito/carrito_paso_tres           carrito/carrito3.php
+RewriteRule carrito/carrito_paso_cuatro_paypal  carrito/carrito4paypal.php
+RewriteRule carrito/carrito_paso_cinco_paypal   carrito/carrito5paypal.php
+RewriteRule carrito/carrito_terminado_paypal    carrito/carrito6paypal.php
+RewriteRule carrito/carrito_terminado           carrito/carrito_terminado.php
+RewriteRule carrito/cancelar                    carrito/cancelar.php
+RewriteRule carrito/quitar_vale_descuento       carrito/fun_quitar_vale_descuento.php
+RewriteRule carrito/carrito_tpv                 carrito/carrito_fin.php
+RewriteRule carrito/carrito_fin_tpv             carrito/carrito_fin_tpv.php
+
+RewriteRule login/registro                  login/registro.php
+RewriteRule login/recordar                  login/recordar.php
+RewriteRule login/cerrar_sesion             login/cerrar_sesion.php
+RewriteRule login/panel_control             login/panel_control.php
+RewriteRule login/(.*)/(.*)                 login/panel_control.php?sec=$1&CPid=$2
+RewriteRule factura/(.*)                    login/factura.php?Fid=$1
+RewriteRule login/contactar                 login/contactar.php
+RewriteRule login/newsletter                login/newsletter.php
+
+RewriteRule pag/(.*)/(.*)                paginas.php?PAid=$1
+RewriteRule blog/(.*)                    blog.php?pagina=$1
+RewriteRule post/(.*)/(.*)               post.php?Nid=$1
+
+
+ErrorDocument 404 http://www.cafeencapsula.com
